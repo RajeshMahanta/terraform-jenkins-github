@@ -12,7 +12,7 @@ terraform {
 }
 
 
-module "app-ec2" {
+resource "aws_instance" "default" {
 infra_sg    = "default"
 ec2_instance_names  = ["app-ec2-1qa"]
 ec2_instance_count  = "1"

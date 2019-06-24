@@ -14,7 +14,6 @@ terraform {
 
 module "app-ec2" {
 infra_sg    = "default"
-source      = "../../../modules/app-ec2"
 ec2_instance_names  = ["app-ec2-1qa"]
 ec2_instance_count  = "1"
 app_ingress_cidrs   = "0.0.0.0/0"
